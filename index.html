@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="http://scotmarshall.github.io/three-particle-test/css/styles.css"></link>
-    <link rel="stylesheet" href="http://scotmarshall.github.io/three-particle-test/css/materialize.min.css"></link>
-    <script src="http://scotmarshall.github.io/three-particle-test/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://scotmarshall.github.io/three-particle-test/css/styles.css"></link>
+    <link rel="stylesheet" href="https://scotmarshall.github.io/three-particle-test/css/materialize.min.css"></link>
+    <script src="https://scotmarshall.github.io/three-particle-test/js/materialize.min.js"></script>
     <title>Particle Test</title>
 </head>
 <body>
@@ -49,8 +49,8 @@
             </div>
         </div>
     </div>
-    <script src="http://scotmarshall.github.io/three-particle-test/js/three.min.js"></script>
-    <script src="http://scotmarshall.github.io/three-particle-test/js/postprocessing.min.js"></script>
+    <script src="https://scotmarshall.github.io/three-particle-test/js/three.min.js"></script>
+    <script src="https://scotmarshall.github.io/three-particle-test/js/postprocessing.min.js"></script>
     <script>
 
         let scene, camera, cloudParticles = [], composer;
@@ -92,7 +92,7 @@
             document.body.appendChild(renderer.domElement);
 
             let loader = new THREE.TextureLoader();
-            loader.load( "http://scotmarshall.github.io/three-particle-test/img/smoke.png", function(texture){
+            loader.load( "https://scotmarshall.github.io/three-particle-test/img/smoke.png", function(texture){
                 cloudGeometry = new THREE.PlaneBufferGeometry(500,500);
                 cloudMaterial = new THREE.MeshLambertMaterial({
                     map: texture,
@@ -115,7 +115,7 @@
                 }
             });
 
-            loader.load("http://scotmarshall.github.io/three-particle-test/img/stars.jpg", function(texture){
+            loader.load("https://scotmarshall.github.io/three-particle-test/img/stars.jpg", function(texture){
 
                 const textureEffect = new POSTPROCESSING.TextureEffect({
                     blendFunction: POSTPROCESSING.BlendFunction.COLOR_DODGE,
