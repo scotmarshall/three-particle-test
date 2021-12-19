@@ -92,7 +92,7 @@
             document.body.appendChild(renderer.domElement);
 
             let loader = new THREE.TextureLoader();
-            loader.load( "/img/smoke.png", function(texture){
+            loader.load( "http://scotmarshall.github.io/three-particle-test/img/smoke.png", function(texture){
                 cloudGeometry = new THREE.PlaneBufferGeometry(500,500);
                 cloudMaterial = new THREE.MeshLambertMaterial({
                     map: texture,
@@ -115,7 +115,7 @@
                 }
             });
 
-            loader.load("/img/stars.jpg", function(texture){
+            loader.load("http://scotmarshall.github.io/three-particle-test/img/stars.jpg", function(texture){
 
                 const textureEffect = new POSTPROCESSING.TextureEffect({
                     blendFunction: POSTPROCESSING.BlendFunction.COLOR_DODGE,
